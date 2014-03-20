@@ -29,8 +29,8 @@ mkdir ~/.fonts.conf.d
 cd ~/.fonts.conf.d
 wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 git clone https://github.com/Lokaltog/powerline-fonts.git /tmp/powerline-fonts
-fc-cache -vf ~/.fonts
 cp -R /tmp/powerline-fonts/DejaVuSansMono ~/.fonts
+fc-cache -vf ~/.fonts
 sudo pip install --user git+git://github.com/Lokaltog/powerline
 sudo chown -R $USER ~/.local
 ```
