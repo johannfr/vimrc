@@ -1,7 +1,7 @@
 vimrc
 =====
 
-=== Pathogen ===
+## Pathogen
 
 Setup Pathogen to manage your plugins
 ```bash
