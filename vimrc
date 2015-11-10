@@ -47,7 +47,8 @@ set laststatus=2
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 " For ctrlp
-let g:ctrlp_max_height = 30
+" let g:ctrlp_max_height = 30
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10000'
 set wildignore+=*.pyc
 set wildignore+=*.o
 set wildignore+=*.d
@@ -58,8 +59,14 @@ set wildignore+=*/coverage/*
 let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 map <Leader>p i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><C-c>
+map <Leader>b :!python ~/mitt/werkzeugbuildserver/buildclient.py<CR>
+map <Leader>c :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz clean<CR>
+map <Leader>f :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz flash<CR>
+map <Leader>x :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz xide<CR>
+map <Leader>u :echo system('python ~/mitt/werkzeugbuildserver/buildclient.py svn update')<CR>
+map <Leader>h :vsp<CR>:FSRight<CR>
 
 " Better navigating through omnicomplete option list
 " See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim

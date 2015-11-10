@@ -78,3 +78,14 @@ cd ~/.vim/bundle/omnicppcomplete
 Get the zip-file at http://www.vim.org/scripts/script.php?script_id=1520
 and extract it into the current folder.
 ```
+
+### FSwitch
+
+http://www.vim.org/scripts/script.php?script_id=2590
+
+```bash
+git ~/.vim/bundle
+git clone https://github.com/derekwyatt/vim-fswitch.git
+```
+
+Leader-h opens the header-file for the current source file in a vertical-split-window to the right.
