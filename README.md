@@ -84,7 +84,7 @@ and extract it into the current folder.
 http://www.vim.org/scripts/script.php?script_id=2590
 
 ```bash
-git ~/.vim/bundle
+cd ~/.vim/bundle
 git clone https://github.com/derekwyatt/vim-fswitch.git
 ```
 
