@@ -61,11 +61,6 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 " map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 map <Leader>p i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><C-c>
-map <Leader>b :!python ~/mitt/werkzeugbuildserver/buildclient.py<CR>
-map <Leader>c :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz clean<CR>
-map <Leader>f :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz flash<CR>
-map <Leader>x :!python ~/mitt/werkzeugbuildserver/buildclient.py wkz xide<CR>
-map <Leader>u :echo system('python ~/mitt/werkzeugbuildserver/buildclient.py svn update')<CR>
 map <Leader>h :vsp<CR>:FSRight<CR>
 
 " Better navigating through omnicomplete option list
@@ -96,3 +91,10 @@ set nocp
 filetype plugin on
 
 set hlsearch
+
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+set backupdir=~/.vim/backup_files//
+set directory=~/.vim/swap_files//
+set undodir=~/.vim/undo_files//
+set tags=./.tags;
+let g:tagbar_phpctags_bin='/home/jof/bin/phpctags'

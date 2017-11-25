@@ -49,7 +49,7 @@ Install ctrlp as a Pathogen bundle
 
 ```bash
 cd ~/.vim/bundle
-git clone https://github.com/kien/ctrlp.vim.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
 ```
 
 ### jedi-vim
@@ -89,3 +89,15 @@ git clone https://github.com/derekwyatt/vim-fswitch.git
 ```
 
 Leader-h opens the header-file for the current source file in a vertical-split-window to the right.
+
+### Tagbar
+
+```bash
+cd ~/.vim/bundle
+git clone git://github.com/majutsushi/tagbar
+```
+
+### Keep undo-, backup- and swap-files away from current directory
+```bash
+mkdir -p ~/.vim/{backup_files,swap_files,undo_files}
+```
