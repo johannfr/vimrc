@@ -87,7 +87,7 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 set nofoldenable
 
 " For omnicppcomplete
-:helptags ~/.vim/bundle/omnicppcomplete/doc
+:helptags ~/.vim/bundle/OmniCppComplete/doc
 ":h omnicppcomplete
 set nocp
 filetype plugin on
