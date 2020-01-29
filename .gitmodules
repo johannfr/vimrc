@@ -1,0 +1,15 @@
+[submodule "pack/start/YouCompleteMe"]
+	path = pack/jof/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "pack/start/ctrlp.vim"]
+	path = pack/jof/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/start/vim-fswitch"]
+	path = pack/jof/start/vim-fswitch
+	url = https://github.com/derekwyatt/vim-fswitch.git
+[submodule "pack/start/editorconfig-vim"]
+	path = pack/jof/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "pack/jof/start/fugitive"]
+	path = pack/jof/start/fugitive
+	url = https://tpope.io/vim/fugitive.git

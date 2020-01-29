@@ -30,23 +30,16 @@ vnoremap < <gv
 vnoremap > >gv
 
 set number
-set colorcolumn=80
+set colorcolumn=88
 highlight ColorColumn ctermbg=233
 
 
-" Setup Pathogen to manage your plugins
-call pathogen#infect()
-
-" For powerline
-" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-set rtp+=/usr/lib/python3/dist-packages/powerline/bindings/vim
-"
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
-" set t_Co=256
+set t_Co=256
 " Use our powerline patched font
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 " For ctrlp
 " let g:ctrlp_max_height = 30
@@ -57,46 +50,17 @@ set wildignore+=*.d
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
-" Settings for jedi-vim
-let g:jedi#usages_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
 " map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 map <Leader>p i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><C-c>
 map <Leader>h :vsp<CR>:FSRight<CR>
 
-" Better navigating through omnicomplete option list
-" See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
-set completeopt=longest,menuone
-function! OmniPopup(action)
-    if pumvisible()
-        if a:action == 'j'
-            return "\<C-N>"
-        elseif a:action == 'k'
-            return "\<C-P>"
-        endif
-    endif
-    return a:action
-endfunction
-
-inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
-inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
-
-
-" Python folding
-set nofoldenable
-
-" For omnicppcomplete
-:helptags ~/.vim/bundle/OmniCppComplete/doc
-":h omnicppcomplete
 set nocp
 filetype plugin on
 
 set hlsearch
 
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
 set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
 set undodir=~/.vim/undo_files//
-set tags=./.tags;
-let g:tagbar_phpctags_bin='/home/jof/bin/phpctags'
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']

@@ -1,11 +1,13 @@
 vimrc
 =====
 
-## Powerline
-
-Powerline you probably already have powerline installed.. Right?
-
-Might need to check the bundle path in .vimrc
 
 ## Install
-git clone --recursive <this-repo> ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc
+```
+git clone --recursive https://github.com/johannfr/vimrc ~/.vim
+cd ~/.vim/pack/jof/start/YouCompleteMe
+python3 install.py --clang-completer --clangd-completer
+cd ~/.vim/pack/jof/start
+vim -u NONE -c "helptags fugitive/docs" -c q
+```
+
