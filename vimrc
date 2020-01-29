@@ -1,3 +1,4 @@
+set encoding=utf-8
 set guioptions-=T
 set tabstop=4
 set softtabstop=4
@@ -63,4 +64,5 @@ set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
 set undodir=~/.vim/undo_files//
 
+let g:ycm_autoclose_preview_window_after_completion = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
