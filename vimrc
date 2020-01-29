@@ -40,8 +40,8 @@ highlight ColorColumn ctermbg=233
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
-set t_Co=256
-set guifont=DejaVu\ Sans\ Mono\ Book
+" set t_Co=256
+set guifont=Menlo\ for\ Powerline\ 9
 
 " For ctrlp
 " let g:ctrlp_max_height = 30
@@ -67,3 +67,5 @@ set undodir=~/.vim/undo_files//
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'

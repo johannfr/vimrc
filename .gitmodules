@@ -16,3 +16,9 @@
 [submodule "pack/jof/opt/solarized8"]
 	path = pack/jof/opt/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "pack/jof/start/vim-airline"]
+	path = pack/jof/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/jof/opt/vim-airline-themes"]
+	path = pack/jof/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
