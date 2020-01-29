@@ -13,3 +13,6 @@
 [submodule "pack/jof/start/fugitive"]
 	path = pack/jof/start/fugitive
 	url = https://tpope.io/vim/fugitive.git
+[submodule "pack/jof/opt/solarized8"]
+	path = pack/jof/opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git

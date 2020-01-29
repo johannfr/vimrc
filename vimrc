@@ -11,7 +11,9 @@ set noerrorbells
 set visualbell
 set t_vb=
 set printoptions=paper:A4,duplex:off,collate:n,syntax:y
-colorscheme torte
+
+set background=dark
+colorscheme solarized8
 
 autocmd! bufwritepost .vimrc source %
 
@@ -39,8 +41,7 @@ highlight ColorColumn ctermbg=233
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
-" Use our powerline patched font
-" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifont=DejaVu\ Sans\ Mono\ Book
 
 " For ctrlp
 " let g:ctrlp_max_height = 30
