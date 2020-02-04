@@ -25,6 +25,7 @@ map <c-h> <c-w>h
 
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
+nnoremap <Leader>jd :YcmCompleter GoTo<CR>
 
 vnoremap <Leader>s :sort<CR>
 
@@ -49,8 +50,16 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10000'
 set wildignore+=*.pyc
 set wildignore+=*.o
 set wildignore+=*.d
-set wildignore+=*_build/*
+set wildignore+=*build*/
 set wildignore+=*/coverage/*
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 " map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 map <Leader>p i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><C-c>
@@ -65,7 +74,12 @@ set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
 set undodir=~/.vim/undo_files//
 
+set list
+set showbreak=↪\ 
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_key_list_stop_completion = ['<C-y>', '<Enter>']
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
