@@ -3,7 +3,7 @@ vimrc
 
 
 ## Install
-```
+```bash
 git clone --recursive https://github.com/johannfr/vimrc ~/.vim
 cd ~/.vim/pack/jof/start/YouCompleteMe
 python3 install.py --clang-completer --clangd-completer
