@@ -16,6 +16,7 @@ set background=dark
 colorscheme solarized8
 
 autocmd! bufwritepost .vimrc source %
+autocmd BufWritePre *.py execute ':Black'
 
 let mapleader = ","
 map <c-j> <c-w>j
