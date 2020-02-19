@@ -1,4 +1,5 @@
 /backup_files/*
 /swap_files/*
 /undo_files/*
+/black
 .netrwhist

@@ -22,3 +22,6 @@
 [submodule "pack/jof/opt/vim-airline-themes"]
 	path = pack/jof/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/jof/start/black"]
+	path = pack/jof/start/black
+	url = https://github.com/psf/black.git
