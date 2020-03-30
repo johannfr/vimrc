@@ -25,3 +25,6 @@
 [submodule "pack/jof/start/black"]
 	path = pack/jof/start/black
 	url = https://github.com/psf/black.git
+[submodule "pack/jof/start/vim-conflicted"]
+	path = pack/jof/start/vim-conflicted
+	url = https://github.com/christoomey/vim-conflicted.git
