@@ -30,6 +30,9 @@ nnoremap <Leader>jd :YcmCompleter GoTo<CR>
 
 vnoremap <Leader>s :sort<CR>
 
+map <C-K> :py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
+imap <C-K> <c-o>:py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
+
 " Indent
 vnoremap < <gv
 vnoremap > >gv
