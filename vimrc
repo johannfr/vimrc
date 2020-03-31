@@ -15,8 +15,14 @@ set printoptions=paper:A4,duplex:off,collate:n,syntax:y
 set background=dark
 colorscheme solarized8
 
+function! ClangFormatOnSave()
+    let l:formatdiff = 1
+    py3f /usr/share/clang/clang-format-10/clang-format.py
+endfunction
+
 autocmd! bufwritepost .vimrc source %
 autocmd BufWritePre *.py execute ':Black'
+autocmd BufWritePre *.h,*.hpp,*.c,*.cpp,*.cc call ClangFormatOnSave()
 
 let mapleader = ","
 map <c-j> <c-w>j
