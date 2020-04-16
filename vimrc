@@ -36,8 +36,8 @@ nnoremap <Leader>jd :YcmCompleter GoTo<CR>
 
 vnoremap <Leader>s :sort<CR>
 
-map <C-K> :py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
-imap <C-K> <c-o>:py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
+"map <C-K> :py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
+"imap <C-K> <c-o>:py3f /usr/share/clang/clang-format-10/clang-format.py<cr>
 
 " Indent
 vnoremap < <gv
@@ -93,3 +93,6 @@ let g:ycm_key_list_stop_completion = ['<C-y>', '<Enter>']
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
+let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
