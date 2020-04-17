@@ -15,10 +15,16 @@ set printoptions=paper:A4,duplex:off,collate:n,syntax:y
 set background=dark
 colorscheme solarized8
 
-function! ClangFormatOnSave()
-    let l:formatdiff = 1
+function! ClangFormat()
     py3f /usr/share/clang/clang-format-10/clang-format.py
 endfunction
+
+function! ClangFormatOnSave()
+    let l:formatdiff = 1
+    call ClangFormat()
+endfunction
+
+command! ClangFormat call ClangFormat()
 
 autocmd! bufwritepost .vimrc source %
 autocmd BufWritePre *.py execute ':Black'
