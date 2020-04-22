@@ -96,9 +96,12 @@ set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_key_list_stop_completion = ['<C-y>', '<Enter>']
+
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
+
 let g:UltiSnipsExpandTrigger="<c-s>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
