@@ -31,3 +31,6 @@
 [submodule "pack/jof/start/ultisnips"]
 	path = pack/jof/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "pack/jof/start/ack.vim"]
+	path = pack/jof/start/ack.vim
+	url = https://github.com/mileszs/ack.vim.git

@@ -19,12 +19,17 @@ function! ClangFormat()
     py3f /usr/share/clang/clang-format-10/clang-format.py
 endfunction
 
+function! ClangFormatFull()
+    let l:formatdiff = 0
+    call ClangFormat()
+endfunction
+
 function! ClangFormatOnSave()
     let l:formatdiff = 1
     call ClangFormat()
 endfunction
 
-command! ClangFormat call ClangFormat()
+command! ClangFormat call ClangFormatFull()
 
 autocmd! bufwritepost .vimrc source %
 autocmd BufWritePre *.py execute ':Black'
@@ -106,3 +111,9 @@ let g:UltiSnipsExpandTrigger="<c-s>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="horizontal"
+
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
